@@ -1,0 +1,80 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = "1 2 3 5 6 8 5 6 8 5 6 8 5 9 10"; 		</script> 	</head> 	<body oncontextmenu="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><ul><li><a href='../Jg6i/Jg6i1.html'>영한 사전</a></li><li><a href='../Jg6i/Jg6i2.html'>파일 복사</a></li><li><a href='../Jg6i/Jg6i3.html'>날씨 뉴스</a></li><ul><li><a href='Jg6i3.html'>코드읽기</a></li><li><a href='Jg6i3a.html'>알고리즘</a></li><li><a href='Jg6i3k.html'>키워드</a></li><li><a href='Jg6i3b.html'>빈칸채우기</a></li><li><a href='Jg6i3s.html'>실행순서</a></li><li><a href='Jg6i3m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter16/Weather.java' target='code'>소스코드</a></li></ul><li><a href='../Jg6i/Jg6i4.html'>미로 맵 출력</a></li><li><a href='../Jg6i/Jg6i5.html'>게임 랭킹</a></li></ul><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>파일에서 날씨 정보를 추출하고, 그 추출 정보를 바탕으로 날씨 뉴스를 생성하는 문제입니다 실행순서를 클릭하세요 참고로, 날씨 정보는 아래와 같이 '정보 [ 탭 ] 정보 [ 탭 ] 정보 [ 탭 ] ...'의 구조로 저장되어 있습니다. 
+<pre>
+--------- 파일 weather1.txt의 내용 --------- 
+1	31	목	대설특보	눈길	-4	-4	-1	0	4	4	1	3	2	2	4	5
+6	29	금	호우특보	빗길	21	21	23	23	22	21	29	30	31	31	26	28
+1	3	목	강풍주의보	안전	-8	-14	-7	-4	-2	2	2	2	4	7	8	7
+--------- 파일 weather2.txt의 내용 --------- 
+6	29	금	호우특보	빗길	21	21	23	23	22	21	29	30	31	31	26	28
+--------- 파일 weather3.txt의 내용 --------- 
+1	3	목	강풍주의보	안전	-8	-14	-7	-4	-2	2	2	2	4	7	8	7
+</pre>
+관련신문기사 - http://news.kmib.co.kr/article/view.asp?arcid=0013032800&code=61121611&cp=nv</pre> 				<pre class='selectable'>파일이름을 입력하세요: <b><span style='color:rgb(255,0,0);'>C:\Users\user\Downloads\weather1.txt</span></b>
+1월 31일 목요일, 아침 날씨입니다.
+아침 최저기온은 서울 -4도, 춘천 -4도, 대전 -1도, 광주 0도, 부산 4도, 제주 4도로 예상됩니다.
+낮 최고기온은 서울 1도, 춘천 3도, 대전 2도, 광주 2도, 부산 4도, 제주 5도로 예상됩니다.
+일부 지방에 대설특보가 발효중입니다. 출근길 눈길 운전에 유의해야 합니다.
+	
+6월 29일 금요일, 아침 날씨입니다.
+아침 최저기온은 서울 21도, 춘천 21도, 대전 23도, 광주 23도, 부산 22도, 제주 21도로 예상됩니다.
+낮 최고기온은 서울 29도, 춘천 30도, 대전 31도, 광주 31도, 부산 26도, 제주 28도로 예상됩니다.
+일부 지방에 호우특보가 발효중입니다. 출근길 빗길 운전에 유의해야 합니다.
+	
+1월 3일 목요일, 아침 날씨입니다.
+아침 최저기온은 서울 -8도, 춘천 -14도, 대전 -7도, 광주 -4도, 부산 -2도, 제주 2도로 예상됩니다.
+낮 최고기온은 서울 2도, 춘천 2도, 대전 4도, 광주 7도, 부산 8도, 제주 7도로 예상됩니다.
+일부 지방에 강풍주의보가 발효중입니다. 출근길 안전 운전에 유의해야 합니다. 
+</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre></pre><pre id="code0" class="unselectable codeClass">	import java.io.*;
+</pre><pre id="code0" class="unselectable codeClass">	import java.util.Scanner;
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code0" class="unselectable codeClass">	public class Weather
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code1" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('1')">1		public static void main( String[] args ) throws IOException {
+</pre><pre id="code0" class="unselectable codeClass">			Scanner scan = new Scanner( System.in );
+</pre><pre id="code0" class="unselectable codeClass">			String month="", day="", week="", weatherReport="", precaution="";
+</pre><pre id="code0" class="unselectable codeClass">			int  lowSeoul = 0, lowChuncheon = 0, lowDaejeon = 0, lowGwangju = 0, lowBusan = 0, lowJeju = 0;
+</pre><pre id="code0" class="unselectable codeClass">			int  highSeoul= 0, highChuncheon= 0, highDaejeon= 0, highGwangju= 0, highBusan= 0, highJeju= 0;
+</pre><pre id="code0" class="unselectable codeClass">			String filename = "";
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code0" class="unselectable codeClass">			System.out.print( "파일이름을 입력하세요: " );
+</pre><pre id="code0" class="unselectable codeClass">			filename = scan.next();
+</pre><pre id="code3" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('3')">3			BufferedReader inFile = new BufferedReader( new FileReader( new File( filename ) ) );
+
+</pre><pre id="code5" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('5')">5			for( String line; ( line = inFile.readLine() ) != null; ) {
+</pre><pre id="code0" class="unselectable codeClass">				String[] item = line.split("\t");
+</pre><pre id="code6" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('6')">6				if ( item.length &lt; 17 ) {
+</pre><pre id="code0" class="unselectable codeClass">					System.out.print("[오류] 게임랭킹 내용을 읽어올 수 없습니다.");
+</pre><pre id="code7" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('7')">7					break;
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">				
+</pre><pre id="code0" class="unselectable codeClass">				month         = item[0];
+</pre><pre id="code0" class="unselectable codeClass">				day           = item[1];
+</pre><pre id="code0" class="unselectable codeClass">				week          = item[2];
+</pre><pre id="code0" class="unselectable codeClass">				weatherReport = item[3];
+</pre><pre id="code0" class="unselectable codeClass">				precaution    = item[4];
+</pre><pre id="code0" class="unselectable codeClass">				lowSeoul      = Integer.parseInt( item[5] );
+</pre><pre id="code0" class="unselectable codeClass">				lowChuncheon  = Integer.parseInt( item[6] );
+</pre><pre id="code0" class="unselectable codeClass">				lowDaejeon    = Integer.parseInt( item[7] );
+</pre><pre id="code0" class="unselectable codeClass">				lowGwangju    = Integer.parseInt( item[8] );
+</pre><pre id="code0" class="unselectable codeClass">				lowBusan      = Integer.parseInt( item[9] );
+</pre><pre id="code0" class="unselectable codeClass">				lowJeju       = Integer.parseInt( item[10] );
+</pre><pre id="code0" class="unselectable codeClass">				highSeoul     = Integer.parseInt( item[11] );
+</pre><pre id="code0" class="unselectable codeClass">				highChuncheon = Integer.parseInt( item[12] );
+</pre><pre id="code0" class="unselectable codeClass">				highDaejeon   = Integer.parseInt( item[13] );
+</pre><pre id="code0" class="unselectable codeClass">				highGwangju   = Integer.parseInt( item[14] );
+</pre><pre id="code0" class="unselectable codeClass">				highBusan     = Integer.parseInt( item[15] );
+</pre><pre id="code0" class="unselectable codeClass">				highJeju      = Integer.parseInt( item[16] );
+
+</pre><pre id="code0" class="unselectable codeClass">				System.out.println( month + "월 " + day + "일 " + week + "요일, 아침 날씨입니다." );
+</pre><pre id="code0" class="unselectable codeClass">				System.out.println( "아침 최저기온은 서울 " + lowSeoul + "도, 춘천 " + lowChuncheon + "도, 대전 " + lowDaejeon + "도, 광주 " + lowGwangju + "도, 부산 " + lowBusan + "도, 제주 " + lowJeju + "도로 예상됩니다." );
+</pre><pre id="code0" class="unselectable codeClass">				System.out.println( "낮 최고기온은 서울 " + highSeoul + "도, 춘천 " + highChuncheon + "도, 대전 " + highDaejeon + "도, 광주 " + highGwangju + "도, 부산 " + highBusan + "도, 제주 " + highJeju + "도로 예상됩니다." );
+</pre><pre id="code8" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('8')">8				System.out.print( "일부 지방에 " + weatherReport + "가 발효중입니다. 출근길 " + precaution + " 운전에 유의해야 합니다." );
+</pre><pre id="code0" class="unselectable codeClass">			}
+
+</pre><pre id="code9" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('9')">9			inFile.close();
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code0" class="unselectable codeClass">			scan.close();
+</pre><pre id="code10" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('10')">10		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre>
+</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox"> 				<b>실행 순서</b> 				<pre id = "sP3d4" style='white-space:normal; word-wrap:break-word; width:150px;'></pre> 			</div> 		</div> 	</body> </html>   

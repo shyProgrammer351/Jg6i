@@ -1,0 +1,133 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = [ [ "IOException" ], [ "BufferedReader" ], [ "BufferedReader" ], [ "FileReader" ], [ "File" ], [ "readLine" ], [ "close" ], [ "close" ], 							]; 		</script> 	</head> 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><ul><li><a href='../Jg6i/Jg6i1.html'>영한 사전</a></li><li><a href='../Jg6i/Jg6i2.html'>파일 복사</a></li><li><a href='../Jg6i/Jg6i3.html'>날씨 뉴스</a></li><li><a href='../Jg6i/Jg6i4.html'>미로 맵 출력</a></li><ul><li><a href='Jg6i4.html'>코드읽기</a></li><li><a href='Jg6i4a.html'>알고리즘</a></li><li><a href='Jg6i4k.html'>키워드</a></li><li><a href='Jg6i4b.html'>빈칸채우기</a></li><li><a href='Jg6i4s.html'>실행순서</a></li><li><a href='Jg6i4m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter16/MazeMap.java' target='code'>소스코드</a></li></ul><li><a href='../Jg6i/Jg6i5.html'>게임 랭킹</a></li></ul><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>미로 맵을 출력하는 문제입니다 이를 해결하는 다음 프로그램에 대해 빈칸을 채우세요 <pre style='font-family:monospace;line-height:1;'>
+--------- 파일 mazemap1.txt의 내용 --------- 
+WWWWWWWWW
+WA  W   E
+WWW W WWW
+W   W   W
+W WWWWW W
+W       W
+WWWWWWWWW
+--------- 파일 mazemap2.txt의 내용 --------- 
+WWWWWWWWWWWWWWWWWWWWWWWWW
+WA     BWK      WQ      W
+W       W       W       W
+W       W       W       W
+WWWWCWWWWWWWJWWWWWWWPWWWW
+G                      RE
+WWWWHWWWWWWWLWWWWWWWNWWWW
+W      IW       W       W
+W       W       W       W
+W       W      MWO      W
+WWWWWWWWWWWWWWWWWWWWWWWWW
+--------- 파일 mazemap3.txt의 내용 --------- 
+WW                                                      
+ A                             I                        
+WWWWWWWWW                  WWWWWW                       
+                                                       E
+        WWWWW     WWWWWWWWWW       WWWWWWWWWW    WWWWWWW
+I                                                  I    
+WWWWWWWWW   WWWWWWWWWWWWWWWWWWWWWWWWW       WWWWWWWWW   
+</pre></pre> 				<pre class='selectable'>파일이름을 입력하세요: <b><span style='color:rgb(255,0,0);'>C:\Users\user\Downloads\mazemap1.txt</span></b>
+<div style='font-family:monospace;line-height:1;'><span style='font-family:monospace;background-color:skyblue'>                  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;color:red;'>옷</span>    <span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>          </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>                  </span></div> 
+</pre><br><pre class='selectable'>파일이름을 입력하세요: <b><span style='color:rgb(255,0,0);'>C:\Users\user\Downloads\mazemap2.txt</span></b>
+<div style='font-family:monospace;line-height:1;'><span style='font-family:monospace;background-color:skyblue'>                                                  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;color:red;'>옷</span>          <span style='font-family:monospace;color:black'>●</span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;color:red'>♥</span>            <span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;color:violet'>■</span>            <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>        </span><span style='font-family:monospace;color:black'>○</span><span style='font-family:monospace;background-color:skyblue'>              </span><span style='font-family:monospace;color:skyblue'>◇</span><span style='font-family:monospace;background-color:skyblue'>              </span><span style='font-family:monospace;color:yellow'>☆</span><span style='font-family:monospace;background-color:skyblue'>        </span>  
+<span style='font-family:monospace;color:green'>♣</span>                                            <span style='font-family:monospace;color:violet'>□</span><span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>        </span><span style='font-family:monospace;color:green'>♧</span><span style='font-family:monospace;background-color:skyblue'>              </span><span style='font-family:monospace;color:red'>♡</span><span style='font-family:monospace;background-color:skyblue'>              </span><span style='font-family:monospace;color:green'>♤</span><span style='font-family:monospace;background-color:skyblue'>        </span>  
+<span style='font-family:monospace;background-color:skyblue'>  </span>            <span style='font-family:monospace;color:skyblue'>◆</span><span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>            <span style='font-family:monospace;color:green'>♠</span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;color:yellow'>★</span>            <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>                                                  </span></div> 
+</pre><br><pre class='selectable'>파일이름을 입력하세요: <b><span style='color:rgb(255,0,0);'>C:\Users\user\Downloads\mazemap3.txt</span></b>
+<div style='font-family:monospace;line-height:1;'><span style='font-family:monospace;background-color:skyblue'>    </span>                                                                                                        
+  <span style='font-family:monospace;color:red;'>옷</span>                                                          <span style='font-family:monospace;color:green'>◆</span>                                                
+<span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span>                                    <span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span>                                              
+                                                                                                              <span style='font-family:monospace;color:skyblue;'>문</span>
+                <span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span>          <span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span>        <span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;color:green'>◆</span>                                                                                                    <span style='font-family:monospace;color:green'>◆</span>        
+<span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;background-color:skyblue'>  </span>      
+</div> 
+</pre><br>  	  				<h4>코드 빈칸 채우기</h4> 				<pre style='white-space:pre;border:1px'>import java.io.*; 
+import java.util.Scanner; 
+public class MazeMap 
+{  
+	 
+	private static String map[] = new String[100]; 
+	 
+	private static void writeMap() { 
+		System.out.print( " \033[2J \033[1;1f" ); 
+		for( int row = 0; map[row]!=null; row++ ) { 
+			for( int column = 0; column &lt; map[row].length(); column++ ) { 
+				if (map[row].charAt(column) == 'A') 
+					System.out.print( " \033[31m옷 \033[0m" ); 
+				else if (map[row].charAt(column) == 'W') 
+					System.out.print( " \033[44m   \033[0m" ); 
+				else if (map[row].charAt(column) == ' ') 
+					System.out.print( "  " ); 
+				else if (map[row].charAt(column) == 'E') 
+					System.out.print( " \033[34m문 \033[0m" ); 
+				else if (map[row].charAt(column) == 'B') 
+					System.out.print( " \033[37m● \033[0m" ); 
+				else if (map[row].charAt(column) == 'C') 
+					System.out.print( " \033[37m○ \033[0m" ); 
+				else if (map[row].charAt(column) == 'G') 
+					System.out.print( " \033[32m♣ \033[0m" ); 
+				else if (map[row].charAt(column) == 'H') 
+					System.out.print( " \033[32m♧ \033[0m" ); 
+				else if (map[row].charAt(column) == 'I') 
+					System.out.print( " \033[36m◆ \033[0m" ); 
+				else if (map[row].charAt(column) == 'J') 
+					System.out.print( " \033[36m◇ \033[0m" ); 
+				else if (map[row].charAt(column) == 'K') 
+					System.out.print( " \033[31m♥ \033[0m" ); 
+				else if (map[row].charAt(column) == 'L') 
+					System.out.print( " \033[31m♡ \033[0m" ); 
+				else if (map[row].charAt(column) == 'M') 
+					System.out.print( " \033[32m♠ \033[0m" ); 
+				else if (map[row].charAt(column) == 'N') 
+					System.out.print( " \033[32m♤ \033[0m" ); 
+				else if (map[row].charAt(column) == 'O') 
+					System.out.print( " \033[33m★ \033[0m" ); 
+				else if (map[row].charAt(column) == 'P') 
+					System.out.print( " \033[33m☆ \033[0m" ); 
+				else if (map[row].charAt(column) == 'Q') 
+					System.out.print( " \033[35m■ \033[0m" ); 
+				else if (map[row].charAt(column) == 'R') 
+					System.out.print( " \033[35m□ \033[0m" ); 
+				} 
+			System.out.println(); 
+		} 
+	} 
+	 
+	public static void main( String[] args ) throws <input id='blank0' type='text' required minlength='1' maxlength='30' size='11' onchange='sP3f6(0)'> { 
+		Scanner scan = new Scanner( System.in ); 
+		String filename = ""; 
+		 
+		System.out.print( "파일이름을 입력하세요: " ); 
+		filename = scan.next(); 
+		<input id='blank1' type='text' required minlength='1' maxlength='30' size='14' onchange='sP3f6(1)'> inFile = new <input id='blank2' type='text' required minlength='1' maxlength='30' size='14' onchange='sP3f6(2)'>( new <input id='blank3' type='text' required minlength='1' maxlength='30' size='10' onchange='sP3f6(3)'>( new <input id='blank4' type='text' required minlength='1' maxlength='30' size='4' onchange='sP3f6(4)'>( filename ) ) ); 
+		 
+		for( int row = 0; ( map[row] = inFile.<input id='blank5' type='text' required minlength='1' maxlength='30' size='8' onchange='sP3f6(5)'>() ) != null; row++ ) { 
+			if ( map[row].length() &lt; 3 ) { 
+				map[row] = ""; 
+				row--; 
+			} 
+		} 
+		 
+		 
+		inFile.<input id='blank6' type='text' required minlength='1' maxlength='30' size='5' onchange='sP3f6(6)'>(); 
+		 
+		writeMap(); 
+		 
+		scan.<input id='blank7' type='text' required minlength='1' maxlength='30' size='5' onchange='sP3f6(7)'>(); 
+	} 
+} 	 			</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 		</div> 	</body> </html> 
