@@ -1,70 +1,63 @@
-<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = "1 2 3 5 6 5 6 5 6 5 7 8 9 11 12 11 12 11 12 11 12 11 13 14"; 		</script> 	</head> 	<body oncontextmenu="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/스레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><ul><li><a href='../Jg6i/Jg6i1.html'>영한 사전</a></li><li><a href='../Jg6i/Jg6i2.html'>파일 복사</a></li><li><a href='../Jg6i/Jg6i3.html'>날씨 뉴스</a></li><li><a href='../Jg6i/Jg6i4.html'>맵 출력</a></li><li><a href='../Jg6i/Jg6i5.html'>게임 랭킹</a></li><ul><li><a href='Jg6i5.html'>코드읽기</a></li><li><a href='Jg6i5a.html'>알고리즘</a></li><li><a href='Jg6i5k.html'>키워드</a></li><li><a href='Jg6i5b.html'>빈칸채우기</a></li><li><a href='Jg6i5s.html'>실행순서</a></li><li><a href='Jg6i5m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter16/GameRankingFile.java' target='code'>소스코드</a></li></ul></ul><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀호출</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>게임 스코어를 입력받아 게임 랭킹 파일을 업데이트하는 문제입니다 실행순서를 클릭하세요 <pre style='font-family:monospace;'>
---------- 파일 ranking.txt의 내용 --------- 
-내가짱	8579214
-구름위	3674159
-이기자	1578236
-</pre></pre> 				<pre class='selectable'>게임랭킹 파일이름을 입력하세요: <b><span style='color:rgb(255,0,0);'>C:\Users\user\Downloads\ranking.txt</span></b>
-게임 아이디를 입력하세요: <b><span style='color:rgb(255,0,0);'>홍길동</span></b>
-게임 스코어를 입력하세요: <b><span style='color:rgb(255,0,0);'>4157967</span></b>
-1) 내가짱 8579214
-2) 홍길동 4157967
-3) 구름위 3674159
-4) 이기자 1578236 
-</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre></pre><pre id="code0" class="unselectable codeClass">	import java.io.*;
-</pre><pre id="code0" class="unselectable codeClass">	import java.util.*;
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = "1 2 4 P1b P1e 3 5 P2b P21 P22 E001 2 4 P1b P1e 3 5 P2b P21 P22 E001 2 4 P1b P1e 3 5 P2b P21 P22 E001 2 6 E002 E003 P23 P21 P22 E001 E004 P23 P21 P22 E001 E005 P23 P21 P22 E001 E006 P23 P21 P22 E001 E007 P23 P21 P22 E001 E008 P23 P21 P22 E009 P23 P21 P2e E010 E011 P23 P21 P22 E001 E012 P23 P21 P22 E001 E013 P23 P21 P2e E014 E015 P23 P21 P22 E001 E016 P23 P21 P2e E017 E018"; 		</script> 	</head> 	<body oncontextmenu="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=1><li><a href='../Jf1i/Jf1i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf2i/Jf2i0.html'>출력</a></li><li><a href='../Jf3i/Jf3i0.html'>입력</a></li><li><a href='../Jf4i/Jf4i0.html'>변수</a></li><li><a href='../Jf5i/Jf5i0.html'>연산자</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf7i/Jf7i0.html'>선택문(if)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(while)</a></li><li><a href='../Jf9i/Jf9i0.html'>반복문(for)</a></li><li><a href='../Jg0i/Jg0i0.html'>배열</a></li><li><a href='../Jg1i/Jg1i0.html'>문자열/컬렉션</a></li><li><a href='../Jg2i/Jg2i0.html'>클래스/패키지</a></li><li><a href='../Jg3i/Jg3i0.html'>상속/다형성</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI기초</a></li><li><a href='../Jg5i/Jg5i0.html'>GUI응용</a></li><li><a href='../Jg6i/Jg6i0.html'>예외/스레드</a></li><ul><li><a href='../Jg6i/Jg6i1.html'>입출력 예외</a></li><li><a href='../Jg6i/Jg6i2.html'>숫자 예외</a></li><li><a href='../Jg6i/Jg6i3.html'>참조 예외</a></li><li><a href='../Jg6i/Jg6i4.html'>리듬 게임</a></li><li><a href='../Jg6i/Jg6i5.html'>달리기 대회</a></li><ul><li><a href='Jg6i5.html'>코드읽기</a></li><li><a href='Jg6i5s.html'>실행순서</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter16/Race.java' target='code'>소스코드</a></li></ul></ul><li><a href='../Jg7i/Jg7i0.html'>파일입출력</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:1)</a></li><li><a href='../Jg9i/Jg9i0.html'>네트워크(1:n)</a></li><li><a href='../Jh0i/Jh0i0.html'>열거형/제네릭</a></li><li><a href='../Jh1i/Jh1i0.html'>재귀호출</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>속력이 다른 3명의 선수가 달리기하는 문제입니다 이를 해결하는 다음 프로그램의 실행순서를 클릭하세요 </pre> 				<pre class='selectable'>1  옷                                              1
+2   옷                                             2
+3 옷                                               3 
+</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre>
+<pre id="codeE001" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E001')">E001	<font color="green">// speed 밀리초만큼 플레이어 스레드는 대기</font>
+</pre><pre id="codeE002" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E002')">E002	<font color="green">// main 스레드는 종료했지만 플레이어 스레드는 대기</font>
+</pre><pre id="codeE003" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E003')">E003	<font color="green">// 20 밀리초 후</font>
+</pre><pre id="codeE004" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E004')">E004	<font color="green">// 35 밀리초 후</font>
+</pre><pre id="codeE005" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E005')">E005	<font color="green">// 40 밀리초 후</font>
+</pre><pre id="codeE006" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E006')">E006	<font color="green">// 50 밀리초 후</font>
+</pre><pre id="codeE007" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E007')">E007	<font color="green">// 60 밀리초 후</font>
+</pre><pre id="codeE008" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E008')">E008	<font color="green">// 70 밀리초 후</font>
+</pre><pre id="codeE009" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E009')">E009	<font color="green">// 80 밀리초 후</font>
+</pre><pre id="codeE010" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E010')">E010	<font color="green">// 플레이어 스레드(lane2) 종료</font>
+</pre><pre id="codeE011" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E011')">E011	<font color="green">// 100 밀리초 후</font>
+</pre><pre id="codeE012" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E012')">E012	<font color="green">// 105 밀리초 후</font>
+</pre><pre id="codeE013" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E013')">E013	<font color="green">// 140 밀리초 후</font>
+</pre><pre id="codeE014" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E014')">E014	<font color="green">// 플레이어 스레드(lane1) 종료</font>
+</pre><pre id="codeE015" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E015')">E015	<font color="green">// 150 밀리초 후</font>
+</pre><pre id="codeE016" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E016')">E016	<font color="green">// 200 밀리초 후</font>
+</pre><pre id="codeE017" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E017')">E017	<font color="green">// 플레이어 스레드(lane3) 종료</font>
+</pre><pre id="codeE018" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('E018')">E018	<font color="green">// 모든 스레드 종료 후 프로그램 종료</font>
 </pre><pre id="code0" class="unselectable codeClass">		
-</pre><pre id="code0" class="unselectable codeClass">	public class GameRankingFile
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code0" class="unselectable codeClass">	class Player extends Thread
 </pre><pre id="code0" class="unselectable codeClass">	{
-</pre><pre id="code1" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('1')">1		public static void main( String[] args ) throws IOException {
-</pre><pre id="code0" class="unselectable codeClass">			Scanner scan = new Scanner( System.in );
-</pre><pre id="code0" class="unselectable codeClass">			System.out.print( "게임랭킹 파일이름을 입력하세요: " );
-</pre><pre id="code2" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('2')">2			String filename = scan.next();
-</pre><pre id="code3" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('3')">3			BufferedReader inRankingFile = new BufferedReader( new FileReader( new File( filename ) ) );
+</pre><pre id="code0" class="unselectable codeClass">		private int x, max, lane, speed;
 </pre><pre id="code0" class="unselectable codeClass">		
-</pre><pre id="code0" class="unselectable codeClass">			String[][] id = { { "", "" }, { "", "" }, { "", "" }, { "", "" }, { "", "" } };
-</pre><pre id="code0" class="unselectable codeClass">			int index = 0;
-</pre><pre id="code5" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('5')">5			for( String line; ( line = inRankingFile.readLine() ) != null; index++ ) {
-</pre><pre id="code0" class="unselectable codeClass">				String[] one = line.split("\t");
-</pre><pre id="code0" class="unselectable codeClass">				if ( one.length &gt;= 2 ) {
-</pre><pre id="code0" class="unselectable codeClass">					id[index][0] = one[0];
-</pre><pre id="code6" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('6')">6					id[index][1] = one[1];
-</pre><pre id="code0" class="unselectable codeClass">				}
-</pre><pre id="code0" class="unselectable codeClass">				else {
-</pre><pre id="code0" class="unselectable codeClass">					System.out.print( "(오류) 게임랭킹 내용을 읽어올 수 없습니다." );
-</pre><pre id="code0" class="unselectable codeClass">					break;
-</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="codeP1b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('P1b')">P1b		public Player( int lane, int speed ) {
+</pre><pre id="code0" class="unselectable codeClass">			this.x = 1;
+</pre><pre id="code0" class="unselectable codeClass">			this.max = 6;
+</pre><pre id="code0" class="unselectable codeClass">			this.lane = lane;
+</pre><pre id="code0" class="unselectable codeClass">			this.speed = speed;
+</pre><pre id="codeP1e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('P1e')">P1e		}
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="codeP2b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('P2b')">P2b		public void run() {
+</pre><pre id="code0" class="unselectable codeClass">			try {
+</pre><pre id="code0" class="unselectable codeClass">				System.out.print( "\033[" + lane + ";1f" + lane );
+</pre><pre id="code0" class="unselectable codeClass">				System.out.print( "\033[" + lane + ";"+(max+2)+"f" + lane );
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="codeP21" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('P21')">P21				for( x = 2; x &lt; max; x++ ) {
+</pre><pre id="code0" class="unselectable codeClass">					System.out.print( "\033[" + lane + ";"+ x +"f 옷" );
+</pre><pre id="code0" class="unselectable codeClass">					System.out.print( "\033[4;40f" );
+</pre><pre id="codeP22" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('P22')">P22					Thread.sleep( speed );
+</pre><pre id="codeP23" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('P23')">P23				}
+</pre><pre id="code0" class="unselectable codeClass">			} catch( Exception e ) {
 </pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="codeP2e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('P2e')">P2e		}
+</pre><pre id="code0" class="unselectable codeClass">	}
 </pre><pre id="code0" class="unselectable codeClass">		
-</pre><pre id="code7" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('7')">7			inRankingFile.close();
-</pre><pre id="code0" class="unselectable codeClass">		
-</pre><pre id="code0" class="unselectable codeClass">			System.out.print( "게임 아이디를 입력하세요: " );
-</pre><pre id="code0" class="unselectable codeClass">			id[index][0] = scan.next();
-</pre><pre id="code0" class="unselectable codeClass">			System.out.print( "게임 스코어를 입력하세요: " );
-</pre><pre id="code8" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('8')">8			id[index][1] = scan.next();
-</pre><pre id="code0" class="unselectable codeClass">		
-</pre><pre id="code0" class="unselectable codeClass">			for ( int last = index; 0 &lt; last; last-- ) {
-</pre><pre id="code0" class="unselectable codeClass">				for ( index = 0; index &lt; last; index++ ) {
-</pre><pre id="code0" class="unselectable codeClass">					if ( Integer.parseInt( id[index][1] ) &lt; Integer.parseInt( id[index+1][1] ) ) {
-</pre><pre id="code0" class="unselectable codeClass">						String temp = id[index][0];
-</pre><pre id="code0" class="unselectable codeClass">						id[index][0] = id[index+1][0];
-</pre><pre id="code0" class="unselectable codeClass">						id[index+1][0] = temp;
-</pre><pre id="code0" class="unselectable codeClass">						temp = id[index][1];
-</pre><pre id="code0" class="unselectable codeClass">						id[index][1] = id[index+1][1];
-</pre><pre id="code0" class="unselectable codeClass">						id[index+1][1] = temp;
-</pre><pre id="code0" class="unselectable codeClass">					}
-</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">	public class Race
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code1" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('1')">1		public static void main( String[] args ) {
+</pre><pre id="code0" class="unselectable codeClass">			int[] speed = { 35, 20, 50 };
+</pre><pre id="code2" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('2')">2			for( int lane = 1; lane &lt;= speed.length; lane++ ) {
+</pre><pre id="code3" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('3')">3				Player player =
+</pre><pre id="code4" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('4')">4				                new Player( lane, speed[lane-1] );
+</pre><pre id="code5" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('5')">5				player.start();
 </pre><pre id="code0" class="unselectable codeClass">			}
-</pre><pre id="code0" class="unselectable codeClass">		
-</pre><pre id="code9" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('9')">9			BufferedWriter outRankingFile = new BufferedWriter( new FileWriter( new File( filename ) ) );
-</pre><pre id="code0" class="unselectable codeClass">		
-</pre><pre id="code11" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('11')">11			for ( index = 0; id[index][0].compareTo( "" ) != 0; index++ ) {
-</pre><pre id="code0" class="unselectable codeClass">				System.out.println( index+1 + ") " + id[index][0] + "\t" + id[index][1] );
-</pre><pre id="code12" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('12')">12				outRankingFile.write( id[index][0] + "\t" + id[index][1] + "\n" );
-</pre><pre id="code0" class="unselectable codeClass">			}
-</pre><pre id="code0" class="unselectable codeClass">		
-</pre><pre id="code13" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('13')">13			outRankingFile.close();
-</pre><pre id="code0" class="unselectable codeClass">			scan.close();
-</pre><pre id="code14" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('14')">14		}
+</pre><pre id="code6" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('6')">6		}
 </pre><pre id="code0" class="unselectable codeClass">	}
 </pre>
 </pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox"> 				<b>실행 순서</b> 				<pre id = "sP3d4" style='white-space:normal; word-wrap:break-word; width:150px;'></pre> 			</div> 		</div> 	</body> </html>   
